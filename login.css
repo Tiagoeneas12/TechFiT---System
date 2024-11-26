@@ -1,0 +1,95 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71)), 
+    url('PROJETO/Tela_login/Techfitimg.jpg');
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+/* Estilo dos rótulos */
+label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(20, 147, 220);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(17, 54, 71);
+}
+
+.separator {
+    width: 5px; /* Largura da linha de separação */
+    background-color: rgb(17, 54, 71); /* Cor da linha */
+    height: 100%; /* Altura da linha */
+}
+
+.image-container {
+    flex: 1; /* Faz a imagem ocupar o restante do espaço */
+    position: relative; /* Necessário para o posicionamento da imagem */
+}
+
+#img {
+    width: 100%; /* A imagem ocupa 100% da largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Faz a imagem cobrir a área, mantendo a proporção */
+}
+
+
+.error-message {
+    background-color: #ff4d4d; /* Vermelho */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
